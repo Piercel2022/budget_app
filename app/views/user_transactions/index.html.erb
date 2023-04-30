@@ -1,0 +1,21 @@
+<section class = 'main-section'>
+<h1 class="content-header">TRANSACTIONS</h1>
+<div class="transaction-category">
+  <img src="<%= @group.icon %>">
+  <h4><%= @group.name %></h4>
+  <strong>$<%= @group.total_amount %></strong>
+</div>
+
+
+<div class="transaction-cont">
+  <% @user_transactions.each do |user_transaction| %>
+    <%= render user_transaction %>
+  <% end %>
+</div>
+
+<div class="links-wrapper trans-link"> <%= link_to "Back to categories", groups_path, class:'link' %></div>
+
+<%= link_to new_group_user_transaction_path do %>
+  <div class='content-link'><h5>Add a new transaction</h5></div>
+<% end %>
+</section>
