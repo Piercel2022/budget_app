@@ -1,0 +1,10 @@
+<%= link_to group_user_transactions_path(group) do %>
+  <div class="category-wrapper">
+    <img src="<%= group.icon %>" class="icon">
+    <span>
+      <h4><%= group.name %></h4>
+      <p><%= group.created_at.strftime('%d %b %Y') %></p>
+    </span>
+    <strong>$<%= group.total_amount %></strong>
+  </div>
+<% end %>
