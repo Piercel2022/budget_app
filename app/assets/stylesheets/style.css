@@ -122,3 +122,9 @@ body {
   padding: 20px 10px;
   font-size: 20px;
 }
+.transaction-wrapper{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #d3d4d4;
+  margin: 1em;
+}
