@@ -41,12 +41,7 @@
   color: #fff;
 }
 
-.forms {
-  display: flex;
-  justify-content: center;
-  width: 360px;
-  height: 360px;
-}
+
 
 img {
   width: 60px;
@@ -106,18 +101,6 @@ a {
   z-index: 100;
 }
 
-.bi-x-lg {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.bi-person-circle {
-  padding: 20px 10px;
-  font-size: 20px;
-}
 
 main {
   display: flex;
@@ -129,8 +112,6 @@ main {
   margin: 0 auto;
 
   /* padding: 1rem; */
-  position: relative;
-  border: 1px solid rgba(134, 134, 134, 0.507);
 }
 
 body,
@@ -148,7 +129,7 @@ body {
 
 .main-heading {
   font-family: "Dancing Script", cursive;
-  font-size: 8rem;
+  font-size: 2rem;
   color: #434b54;
   text-align: center;
   margin-top: 100px;
