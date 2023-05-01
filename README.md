@@ -172,7 +172,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -187,7 +186,7 @@ If you like this project...
 
 I would like to thank...
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<li><a href="https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=">Gregoire Vella on Behance</a></li>
 
 
 
