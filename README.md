@@ -54,14 +54,14 @@ REQUIRED SECTIONS:
 </details>
 
 <details>
-  <summary>The most popular html, Css and javascript in the world </summary>
+  <summary>Bootstrap is the most popular html, Css and javascript in the world </summary>
   <ul>
     <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
