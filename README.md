@@ -149,8 +149,8 @@ To run tests, run the following command:
 
 👤 **Pierre Celestin Moussa**
 
-- GitHub:[@Piercel2022] (https://github.com/Piercel2022)
-- Twitter:[@pier_celestin] (https://twitter.com/pier_celestin)
+- GitHub:[@Piercel2022](https://github.com/Piercel2022)
+- Twitter:[@pier_celestin](https://twitter.com/pier_celestin)
 - LinkedIn: [@pierrecelestinmax](https://linkedin.com/in/pierrecelestinmax)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
