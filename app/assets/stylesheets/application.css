@@ -61,11 +61,6 @@ img {
   width: 100vw;
 }
 
-.menu{
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
 .footer,
 .splash-footer {
   position: fixed;
