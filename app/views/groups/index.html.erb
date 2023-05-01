@@ -1,5 +1,5 @@
-<section class = 'main-section'>
-<h1 class="content-header">CATEGORIES</h1>
+<div class = 'main-section'>
+<p class="content-header">CATEGORIES</p>
  <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: false } %>
 <%= render 'card' %>
 <div class="content-cont">
@@ -11,4 +11,4 @@
 <%= link_to new_group_path do %>
   <div class='content-link'><h5>Add a new category</h5></div>
 <% end %>
-</section>
+</div>
