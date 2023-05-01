@@ -236,10 +236,12 @@ strong {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1.5px;
+  background-color: #3778c2;
 }
 
 .header {
   margin-bottom: 1rem;
+  background-color: #3778c2;
 }
 
 .gift-credit {

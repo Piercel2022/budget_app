@@ -12,6 +12,9 @@ class Group < ApplicationRecord
     end
     amount
   end
+  def recent_transactions
+    user_transactions.order(created_at: :DESC)
+  end
 
   def icons
     JSON.parse(File.read('./icons/icons.json'))
