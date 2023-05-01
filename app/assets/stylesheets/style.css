@@ -110,15 +110,3 @@ body {
   left: 0;
 }
 
-.bi-x-lg {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.bi-person-circle {
-  padding: 20px 10px;
-  font-size: 20px;
-}
