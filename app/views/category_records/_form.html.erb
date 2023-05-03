@@ -1,0 +1,27 @@
+<%= form_with(model: category_record) do |form| %>
+  <% if category_record.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(category_record.errors.count, "error") %> prohibited this category_record from being saved:</h2>
+
+      <ul>
+        <% category_record.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :category_id, style: "display: block" %>
+    <%= form.text_field :category_id %>
+  </div>
+
+  <div>
+    <%= form.label :record_id, style: "display: block" %>
+    <%= form.text_field :record_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
