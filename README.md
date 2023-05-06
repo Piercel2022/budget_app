@@ -121,15 +121,11 @@ Clone this repository to your desired folder:
   git clone git@github.com:Piercel2022/budget_app.git
   cd budget_app
 ```
-  git clone git@github.com:Piercel2022/Piercel-Budget.git
-```
 ### Install
 
 Install this project with:
 
 ```sh
-  bundle install
-```
   bundle install
 ```
 ### Usage
@@ -151,7 +147,7 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 
 
