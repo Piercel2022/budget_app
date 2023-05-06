@@ -16,29 +16,17 @@ Metrics/MethodLength:
   Include:
     - "app/controllers/*"
     - "app/models/*"
-<<<<<<< HEAD
   Max: 50
-=======
-  Max: 20
->>>>>>> 28a2dc7 (Add the rubocop configuration file)
 Metrics/AbcSize:
   Include:
     - "app/controllers/*"
     - "app/models/*"
-<<<<<<< HEAD
   Max: 70
-=======
-  Max: 50
->>>>>>> 28a2dc7 (Add the rubocop configuration file)
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   AllowedMethods: ['describe']
-<<<<<<< HEAD
   Max: 70
-=======
-  Max: 30
->>>>>>> 28a2dc7 (Add the rubocop configuration file)
 
 Style/Documentation:
   Enabled: false
@@ -69,8 +57,4 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
-<<<<<<< HEAD
   Enabled: false
-=======
-  Enabled: false
->>>>>>> 28a2dc7 (Add the rubocop configuration file)

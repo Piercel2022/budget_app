@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 REQUIRED SECTIONS:
 - Table of Contents
@@ -197,6 +196,3 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-=======
-# Piercel-Budget
->>>>>>> 1aff14b (Initial commit)
