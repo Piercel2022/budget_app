@@ -82,11 +82,11 @@ REQUIRED SECTIONS:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://piercel-payments.onrender.com/)
+- [Live Demo Link](https://piercel-budget.onrender.com/)
 
 ##  Project presentation <a name="live-demo"></a>
 
-- [Video Demo Link](https://www.loom.com/share/9342a67ad1e94d63b2db494430f0dbfe)
+- [Video Demo Link](https://www.loom.com/share/b28b5ff3497b4b8d97ab104052bc20f4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
