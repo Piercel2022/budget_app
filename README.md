@@ -77,16 +77,6 @@ REQUIRED SECTIONS:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Key Features <a name="key-features"></a>
-
-
-- **[Sign Up with Devise]**
-- **[Create categories]**
-- **[Add transactions to categories]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
