@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
     <title>BudgetApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -22,3 +23,26 @@
     </main>
   </body>
 </html>
+=======
+    <title>PiercelBudget</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/29d7bf5b00.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ef5f4f831.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <p class="notice" style="display: none;"><%= notice %></p>
+    <p class="alert" style="display: none;"><%= alert %></p>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
+
+>>>>>>> ea128ec (This commit contains the layouts)
