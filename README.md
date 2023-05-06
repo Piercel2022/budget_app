@@ -34,8 +34,6 @@ REQUIRED SECTIONS:
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Piercel_payments] <a name="about-project"></a>
-
 
 **[Piercel Budget]** is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create categories to keep track of specific expenses and add transactions to those groups to stay on top of the spending. With this app, you can stay in top of list when coming up with financial plan. This app is deployed online and you can check it.
 
