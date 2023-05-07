@@ -81,7 +81,7 @@ REQUIRED SECTIONS:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://piercel-budget.onrender.com/)
+- [budget-app](https://budget-app-0eev.onrender.com/)
 
 ##  Project presentation <a name="live-demo"></a>
 
