@@ -1,0 +1,25 @@
+<%= form_with model: user_transaction, url: group_user_transactions_path(@group) do |form| %>
+  <% if user_transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user_transaction.errors.count, "error") %> prohibited this user_transaction from being saved:</h2>
+
+      <ul>
+        <% user_transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.text_field :name , placeholder:"Transaction name", :required => true%>
+  </div>
+
+  <div class="field">
+    <%= form.number_field :amount , placeholder:"Transaction amount", :required => true, min:'1'%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Save transaction' %>
+  </div>
+<% end %>

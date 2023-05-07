@@ -1,0 +1,5 @@
+<div class="transaction-wrapper">
+    <p>Transaction name: <%= user_transaction.name %></p>
+    <p>Amount paid: $<%= user_transaction.amount %></p>
+    <p>Date of transaction: <%= user_transaction.created_at.strftime('%d %b %Y at %I:%M %p') %></p>
+</div>

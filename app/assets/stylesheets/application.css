@@ -1,0 +1,459 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+:root {
+  --size-border: 2px solid var(--text-color);
+  --box-border: 2px solid var(--shadow-color);
+  --box-hover: 1px solid var(--main-color);
+  --primary-color: #f4f4f4;
+  --background-color: #eee;
+  --main-color: #e0e5ea42;
+  --btn-color: #5fb523;
+  --secondary-color: #4da012;
+  --tertiary-color: #3778c2;
+  --text-color: #434b54;
+  --bg-color: #f5f6f8;
+  --on-secondary: #fff;
+  --shadow-color: #f1f1f2;
+
+  /* --main-color: #a05d1f; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.new-edit-cat {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  color: white;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+
+  /* padding: 1rem; */
+  position: relative;
+  background-color: #02428b;
+  border: 1px solid rgba(134, 134, 134, 0.507);
+}
+
+button,
+input {
+  border: 0;
+  outline: none;
+  transition: all 0.5s ease-in;
+}
+
+button a {
+  color: var(--on-secondary);
+  font-size: 1.3rem;
+}
+
+form {
+  flex: 1;
+  flex-direction: column;
+
+  /* justify-content: center; */
+  padding: 2rem 1rem;
+  background-color: var(--bg-color);
+  border-radius: 0 0 4px  4px;
+}
+
+/* SPLASH PAGE */
+
+.splash-page {
+  width: 100%;
+  height: calc(100vh);
+  max-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color);
+}
+
+.splash-page h1 {
+  font-size: 2rem;
+  padding: 0.3rem 1rem;
+  margin: 0 10px;
+  text-align: center;
+  color: var(--secondary-color);
+  border: var(--box-border);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.splash-page .user-icon {
+  flex-direction: column;
+}
+
+.user-icon i {
+  color: var(--primary-color);
+}
+
+.user-icon h2 {
+  color: var(--primary-color);
+}
+
+.buttons {
+  width: 90%;
+}
+
+.buttons form {
+  width: 100%;
+  background-color: var(--main-color);
+  margin: 5px auto;
+}
+
+.buttons button {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--btn-color);
+  padding: 0.5rem;
+  border: var(--bg-color);
+  color: var(--on-secondary);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-splash {
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--primary-color);
+  padding: 1rem 0.5rem;
+  border-radius: 4px  4px 0 0;
+}
+
+.icons i {
+  padding: 0.3rem 0.5rem;
+  text-align: right;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.nav-splash h2 {
+  color: inherit;
+}
+
+.actions {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.actions input {
+  font-weight: 700;
+  border: var(--size-border);
+  border-radius: 4px;
+  padding: 0.2rem 1rem;
+}
+
+.act a {
+  font-weight: 700;
+  border: var(--size-border);
+  border-radius: 4px;
+  padding: 0.2rem 1rem;
+}
+
+/* CATEGORIES PAGE */
+
+.header-categories {
+  height: 70px;
+  width: 100%;
+  justify-content: space-around;
+  background-color: var(--tertiary-color);
+}
+
+.header-categories h1:not(.transaction-header-nav) {
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  color: var(--on-secondary);
+}
+
+.header-categories h1.transaction-header-nav {
+  text-align: center;
+  width: 60%;
+  font-size: 22px;
+}
+
+.transaction-header-nav {
+  font-size: 24px;
+  color: var(--on-secondary);
+}
+
+.categories {
+  padding: 1rem 0;
+}
+
+.category {
+  flex: 1;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-color);
+}
+
+.category.transaction {
+  margin-bottom: 0;
+}
+
+.category-head {
+  position: relative;
+}
+
+.image {
+  width: 70px;
+  min-width: 60px;
+  height: 90%;
+  background-color: var(--shadow-color);
+}
+
+.image img {
+  width: 100%;
+}
+
+.line-bar {
+  margin: 0.6rem auto 1rem;
+}
+
+.name-date {
+  height: 100%;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 1rem 0 2rem;
+  padding-top: 1rem;
+}
+
+.name-date h3.name {
+  font-size: 1.4rem;
+}
+
+.name-date p.date {
+  height: 67%;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.total-amount {
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.new-cat-btn {
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem;
+  background-color: var(--btn-color);
+  transition: all 0.5s ease-in;
+}
+
+.new-cat-btn button {
+  width: 100%;
+  padding: 1rem;
+  border: var(--box-border);
+  background-color: var(--btn-color);
+}
+
+.btn-changes {
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+}
+
+.btns-record {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-changes form,
+.btns-record form {
+  padding: 0;
+  margin-left: 1rem;
+  background-color: inherit;
+}
+
+.actions-btn a,
+.btns-record button,
+.btn-changes form button {
+  font-weight: 600;
+  border: var(--shadow-color);
+  border-radius: 4px;
+  padding: 0.2rem 1rem;
+  color: var(--primary-color);
+  background-color: var(--btn-color);
+  transition: all 0.5s ease-in;
+}
+
+.btn-changes form button,
+.btns-record form button {
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+
+.actions-save input {
+  border: none !important;
+  padding: 3px 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--on-secondary);
+  transition: all 0.5s ease-in;
+}
+
+.transactions {
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactions.show {
+  max-width: 100%;
+  height: calc(100vh - 72px);
+  background-color: var(--bg-color);
+}
+
+.transactions h2 {
+  margin-top: 1.1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.transactions ul {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  background-color: var(--primary-color);
+}
+
+.transactions ul li {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #3778c215;
+}
+
+.transactions li.show .record.show {
+  padding: 1rem 5%;
+}
+
+.transactions li p {
+  margin: 3px 0;
+  font-size: 1.1rem;
+}
+
+.transactions li.show .record.show p {
+  font-size: 1.3rem;
+}
+
+.transactions p span {
+  color: var(--main-color);
+}
+
+.input label {
+  font-weight: 700;
+}
+
+.input input {
+  width: 100%;
+  height: 1.9rem;
+  padding: 0.7rem;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 4px;
+}
+
+.submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 1rem;
+}
+
+.submit input,
+.action-btn a {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border: var(--size-border);
+  border-radius: 8px;
+  color: var(--on-secondary);
+  background-color: var(--btn-color);
+  transition: all 0.5s ease-in;
+}
+
+.new-cat-btn:hover {
+  transform: scale(0.97);
+}
+
+.new-cat-btn button:hover,
+.new-cat-btn button:hover a {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  background-color: var(--btn-color);
+}
+
+input:hover:not(.input-file) {
+  transform: scale(1.01);
+  border: 1px solid var(--main-color);
+}
+
+.actions-btn:hover,
+.action-btn:hover,
+.btns-record button:hover,
+.btn-changes form button:hover {
+  transform: scale(1.03);
+}
+
+.actions-save input:hover,
+.icons i:hover {
+  transform: scale(1.07);
+  color: antiquewhite;
+}
