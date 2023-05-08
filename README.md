@@ -81,7 +81,7 @@ REQUIRED SECTIONS:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [budget-app](https://budget-app-0eev.onrender.com/)
+- [budget-app](https://budget-app-0eev.onrender.com)
 
 ##  Project presentation <a name="live-demo"></a>
 
