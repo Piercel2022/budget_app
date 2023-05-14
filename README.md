@@ -45,6 +45,7 @@ REQUIRED SECTIONS:
   <summary>Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Rails</a></li>
+ </details>
 
 <details>
   <summary>Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.</summary>
@@ -80,7 +81,7 @@ REQUIRED SECTIONS:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Linkhttps://budget-app-0eev.onrender.com/)
+- [Live Demo](https://budget-app-0eev.onrender.com/)
 
 ##  Project presentation <a name="live-demo"></a>
 
