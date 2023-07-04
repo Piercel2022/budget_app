@@ -35,26 +35,27 @@ REQUIRED SECTIONS:
 - [📝 License](#license)
 
 
-# 📖 [Piercel_payments] <a name="about-project"></a>
-
-
-
-**[Piercel_payments]** is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create groups to keep track of specific expenses and add transactions to those groups to stay on top of your spending. With this app, you can stay in top of list when coming up with financial plan.
+**[Piercel Budget]** is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create categories to keep track of specific expenses and add transactions to those groups to stay on top of the spending. With this app, you can stay in top of list when coming up with financial plan. This app is deployed online and you can check it.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
 <details>
   <summary>Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Rails</a></li>
+</details>
+
+<details>
+  <summary>Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">RubyOnRails</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Bootstrap is the most popular html, Css and javascript in the world </summary>
+  <summary>Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.</summary>
   <ul>
     <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   </ul>
@@ -62,12 +63,11 @@ REQUIRED SECTIONS:
 
 <details>
 <summary>PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</summary>
+<summary>The World's Most Advanced Open Source Relational Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
-
-
 
 ### Key Features <a name="key-features"></a>
 
@@ -78,18 +78,18 @@ REQUIRED SECTIONS:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://piercel-payments.onrender.com/)
+- [budget-app](https://budget-app-0eev.onrender.com)
 
 ##  Project presentation <a name="live-demo"></a>
 
-- [Video Demo Link](https://www.loom.com/share/9342a67ad1e94d63b2db494430f0dbfe)
+- [Video Demo Link](https://www.loom.com/share/b28b5ff3497b4b8d97ab104052bc20f4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## <a name="Project-Presentation"> Project Presentation</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -103,7 +103,7 @@ In order to run this project you need:
 ```sh
  gem install rails
 ```
-
+Ruby, rails and postgresql installed
 ### Setup
 
 Clone this repository to your desired folder:
@@ -112,7 +112,6 @@ Clone this repository to your desired folder:
   git clone git@github.com:Piercel2022/budget_app.git
   cd budget_app
 ```
-
 ### Install
 
 Install this project with:
@@ -120,7 +119,6 @@ Install this project with:
 ```sh
   bundle install
 ```
-
 ### Usage
 
 To run the project, execute the following command:
@@ -128,8 +126,6 @@ To run the project, execute the following command:
 ```sh
   rails server
 ```
-
-
 ### Run tests
 
 To run tests, run the following command:
@@ -139,11 +135,10 @@ To run tests, run the following command:
 ```
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 
 
@@ -155,14 +150,11 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **[Modify and delete button on category]**
 - [ ] **[Modify and delete button on transaction]**
 - [ ] **[Improve the user interface of the app]**
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -171,8 +163,7 @@ To run tests, run the following command:
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -187,10 +178,6 @@ If you like this project...
 I would like to thank...
 
 <li><a href="https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=">Gregoire Vella on Behance</a></li>
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>

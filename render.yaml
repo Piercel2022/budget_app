@@ -1,5 +1,5 @@
 databases:
-  - name: budget_app
+  - name: budget_app_4uio
     databaseName: budget_app_4uio
     user: budget_app_4uio_user
 
@@ -9,20 +9,31 @@ services:
     ipAllowList: [] # only allow internal connections
     plan: free # optional (defaults to starter)
     maxmemoryPolicy: allkeys-lfu # optional (defaults to allkeys-lru). Rails recommends allkeys-lfu as a default.
+
+   name: cache
+   ipAllowList: [] # only allow internal connections
+   plan: free # optional (defaults to starter)
+   maxmemoryPolicy: allkeys-lfu # optional (defaults to allkeys-lru). Rails recommends allkeys-lfu as a default.
+
   - type: web
-    name: piercel-payments
+    name: Piercel-Budget
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: budget_app
+          name: budget_app_4uio
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
       - key: REDIS_URL # this must match the name of the environment variable used in production.rb
         fromService:
+
         type: redis
         name: cache
         property: connectionString
+
+          type: redis
+          name: cache
+          property: connectionString

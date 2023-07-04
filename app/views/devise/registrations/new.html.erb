@@ -1,34 +1,44 @@
-<div class ="forms">
-  <h2>Sign up</h2>
-
-   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
-   <%= render "devise/shared/error_messages", resource: resource %>
-  
-    <div class= "mb-3 col-md-6">
-      <%= f.label :name, class:'label' %><br />
-      <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"form-control", required: true %>
-    </div>
-
-    <div class= "mb-3 col-md-6">
-      <%= f.label :email, class:'label' %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", required: true %>
-    </div>
-
-    <div class= "mb-3 col-md-6">
-      <%= f.label :password, class:'label' %>
-      <%= f.password_field :password, autocomplete: "new-password", minlength: 6, class:"form-control"%>
-    </div>
-  
-    <div class= "mb-3 col-md-6">
-      <%= f.label :password_confirmation, class:'label' %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password",
-       required: true, class:"form-control"%>
-    </div>
-    
-    <div class= "mb-3 col-md-6">
-     <%= f.submit "Sign Up", class:"btn btn-primary", id:"post-btn" %>
-    </div>
+<nav class="nav-splash d-flex flex-center">
+  <%= link_to unauthenticated_root_path, class: "icons" do%>
+    <i class="fa-solid fa-arrow-left back"></i>
   <% end %>
-  
-  <%= render "devise/shared/links" %>
-</div>
+  <h2> SIGN UP <h1>
+</nav>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }, html: { class: "login-form d-flex"}) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="input field">
+      <% f.label :name %>
+      <div>
+        <%= f.text_field :name, autofocus: true, placeholder: "name", class: "text-box" %>
+      </div>
+    </div>
+
+    <div class="input field" >
+      <% f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email", class: "text-box" %>
+    </div>
+
+    <div class="input field">
+      <% f.label :password %>
+      <% if @minimum_password_length %>
+     
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "password (6 characters minimum)", class: "text-box" %>
+    </div>
+
+    <div class="input field">
+      <% f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "password_confirmation", class: "text-box" %>
+    </div>
+
+    <%= f.hidden_field :posts_counter, :value => 0 %>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "login-button" %>
+    </div>
+
+    <div class="act d-flex flex-center">
+      <% render "devise/shared/links" %>
+    </div>
+<% end %>

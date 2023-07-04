@@ -1,20 +1,17 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
   devise_for :users
-
   devise_scope :user do
-    get 'users/sign_out' => 'devise/sessions#destroy'
+    authenticated :user do
+      root 'categories#index', as: :authenticated_root
+    end
+    unauthenticated do
+      root 'splash#index', as: :unauthenticated_root
+    end
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  resources :users, only: [:index]
   end
-
-  authenticated :user do
-    root to: 'groups#index'
-  end
-
-  devise_scope :user do
-    root to: 'devise/sessions#splash', as: :splash_root
-  end
-  resources :groups do
-    resources :user_transactions
+  resources :categories do 
+    # resources :records, except: [:index]
+    resources :records
   end
 end
