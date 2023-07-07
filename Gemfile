@@ -28,20 +28,20 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem "jekyll", "~> 3.9.0"
+gem 'jekyll', '~> 3.9.0'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 gem 'redis'
 
 # Use hiredis to get better performance than the "redis" gem
 gem 'hiredis'
-gem "webrick"
+gem 'webrick'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
-gem 'hiredis'
-gem 'rubocop-discourse'
+
 gem 'rails-controller-testing'
 gem 'rspec-rails'
+gem 'rubocop-discourse'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 gem 'rubocop', '>= 1.0', '< 2.0'
