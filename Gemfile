@@ -38,7 +38,6 @@ gem 'hiredis'
 gem "webrick"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
-gem 'redis'
 gem 'hiredis'
 gem 'rubocop-discourse'
 gem 'rails-controller-testing'
