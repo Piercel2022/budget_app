@@ -5,10 +5,16 @@ databases:
 
 services:
   - type: redis
+    name: cache
+    ipAllowList: [] # only allow internal connections
+    plan: free # optional (defaults to starter)
+    maxmemoryPolicy: allkeys-lfu # optional (defaults to allkeys-lru). Rails recommends allkeys-lfu as a default.
+
    name: cache
    ipAllowList: [] # only allow internal connections
    plan: free # optional (defaults to starter)
    maxmemoryPolicy: allkeys-lfu # optional (defaults to allkeys-lru). Rails recommends allkeys-lfu as a default.
+
   - type: web
     name: Piercel-Budget
     env: ruby
@@ -23,6 +29,11 @@ services:
         sync: false
       - key: REDIS_URL # this must match the name of the environment variable used in production.rb
         fromService:
+
+        type: redis
+        name: cache
+        property: connectionString
+
           type: redis
           name: cache
           property: connectionString
